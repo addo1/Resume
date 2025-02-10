@@ -17,12 +17,19 @@ body {
     overflow: hidden;
 }
 
-/* Header (Top Section with Image and Name) */
-.header {
+/* Only the Top Section is Colored */
+.header-wrapper {
     background-color: #f8dfd4;
     padding: 40px;
+}
+
+/* Header with Name and Image */
+.header {
     display: flex;
     align-items: center;
+    padding: 20px;
+    background: white; /* Keeps this section white */
+    border-radius: 8px;
 }
 
 .header img {
@@ -46,13 +53,13 @@ body {
     color: #666;
 }
 
-/* Content Layout */
+/* Main Content Layout */
 .content {
     display: flex;
     padding: 40px;
 }
 
-/* Sidebar (Left Column with Contact Info) */
+/* Sidebar for Contact Details */
 .sidebar {
     width: 35%;
     padding-right: 20px;
@@ -77,7 +84,7 @@ body {
     width: 65%;
 }
 
-/* Section Headers */
+/* Section Titles */
 h2 {
     font-size: 18px;
     font-weight: bold;
