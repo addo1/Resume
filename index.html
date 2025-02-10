@@ -22,45 +22,12 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             overflow: hidden;
-        }
-        .header-wrapper {
-            background-color: #f8dfd4;
-            height: 100px;
-        }
-        .header {
             display: flex;
-            align-items: center;
-            padding: 20px;
-            background: white;
-            position: relative;
-            margin-top: -50px;
-            padding-left: 40px;
-        }
-        .header img {
-            width: 120px;
-            border-radius: 50%;
-            margin-right: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header-text {
-            flex: 1;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 32px;
-            font-weight: bold;
-        }
-        .header p {
-            font-size: 16px;
-            color: #666;
-        }
-        .content {
-            display: flex;
-            padding: 40px;
         }
         .sidebar {
-            width: 35%;
-            padding-right: 20px;
+            width: 30%;
+            padding: 40px;
+            background-color: #f8dfd4;
         }
         .sidebar p, .sidebar a {
             color: #333;
@@ -75,7 +42,8 @@
             text-decoration: underline;
         }
         .main-content {
-            width: 65%;
+            width: 70%;
+            padding: 40px;
         }
         h2 {
             font-size: 18px;
@@ -85,57 +53,59 @@
             margin-bottom: 15px;
         }
         .timeline {
+            position: relative;
             list-style: none;
             padding-left: 20px;
         }
         .timeline li {
+            position: relative;
             margin-bottom: 20px;
             padding-left: 20px;
-            position: relative;
         }
         .timeline li::before {
-            content: '\2022'; /* Bullet point */
+            content: '\25CF'; /* Bullet point */
             position: absolute;
             left: 0;
-            top: 3px;
-            font-size: 18px;
+            top: 5px;
+            font-size: 16px;
             color: #333;
+        }
+        .expertise {
+            margin-top: 30px;
+        }
+        .expertise p {
+            font-size: 14px;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <div class="cv-container">
-        <div class="header-wrapper"></div>
-        <div class="header">
-            <img src="profile.jpg" alt="Profile Picture">
-            <div class="header-text">
-                <h1>Yahye Addo</h1>
-                <p>Data Engineer</p>
-            </div>
+        <div class="sidebar">
+            <p>📞 <a href="tel:+46739874377">+46739874377</a></p>
+            <p>📧 <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a></p>
+            <p>🌍 <a href="https://github.com/addo1" target="_blank">github.com/addo1</a></p>
+            <p>📍 Trollhättan</p>
+            <h2>Education</h2>
+            <p><strong>Computer Engineering</strong> - University West (2023 - )</p>
+            <p><strong>Natural Sciences Program</strong> - Hvitfeldtska High School (2012 - 2015)</p>
+            <h2>Skills</h2>
+            <p>Python, C++, CCNA, HTML, CSS, JAVA, SQL & Relational Databases, Database Management, SQL Query Optimization</p>
+            <h2>Languages</h2>
+            <p>English, Swedish</p>
         </div>
-        <div class="content">
-            <div class="sidebar">
-                <p>📞 <a href="tel:+46739874377">+46739874377</a></p>
-                <p>📧 <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a></p>
-                <p>🌍 <a href="https://github.com/addo1" target="_blank">github.com/addo1</a></p>
-                <p>📍 Trollhättan</p>
-            </div>
-            <div class="main-content">
-                <h2>About Me</h2>
-                <p>Hi, my name is Yahye and I am 28 years old. I am currently in my second year studying Computer Engineering at University West...</p>
-                <h2>Education</h2>
-                <p><strong>Computer Engineering</strong> - University West (2023 - )</p>
-                <p><strong>Natural Sciences Program</strong> - Hvitfeldtska High School (2012 - 2015)</p>
-                <h2>Skills</h2>
-                <p>Python, C++, CCNA, HTML, CSS, JAVA, SQL & Relational Databases, Database Management, SQL Query Optimization</p>
-                <h2>Languages</h2>
-                <p>English, Swedish</p>
-                <h2>Work Experience</h2>
-                <ul class="timeline">
-                    <li><strong>2019 - 2023</strong> Volvo Torslanda<br><strong>Forklift Operator</strong><br>I have worked as a forklift operator at Volvo...</li>
-                    <li><strong>2016 - 2018</strong> Plastal, Arendal<br><strong>Assembler</strong><br>As an assembler, I have gained valuable experience...</li>
-                    <li><strong>2015 - 2016</strong> Solbackeskolan<br><strong>Recreational Instructor</strong><br>As a recreational instructor, I have had the privilege to work...</li>
-                </ul>
+        <div class="main-content">
+            <h2>About Me</h2>
+            <p>Hi, my name is Yahye and I am 28 years old. I am currently in my second year studying Computer Engineering at University West. I am passionate about both technology and innovation and always strive to develop my skills and knowledge in this field. In my free time, I love trying new activities, working out, and socializing with friends. I value teamwork and always look forward to learning from others. Feel free to check out my GitHub or LinkedIn to see some of my past projects.</p>
+            <h2>Work Experience</h2>
+            <ul class="timeline">
+                <li><strong>2019 - 2023</strong> Volvo Torslanda<br><strong>Forklift Operator</strong><br>I have worked as a forklift operator at Volvo, which has given me a deep understanding of both production and management. This experience has taught me the importance of patience and teamwork. In a fast-paced and dynamic work environment, the ability to communicate and build relationships with colleagues is crucial for success.</li>
+                <li><strong>2016 - 2018</strong> Plastal, Arendal<br><strong>Assembler</strong><br>As an assembler, I have gained valuable experience in working with precision and accuracy in production. This role has taught me the importance of following guidelines and safety regulations carefully.</li>
+                <li><strong>2015 - 2016</strong> Solbackeskolan<br><strong>Recreational Instructor</strong><br>As a recreational instructor, I have had the privilege to work with children and youth of various ages. This experience has taught me the importance of creating a safe and stimulating environment where everyone can thrive and develop. I have also developed my communication and conflict-resolution skills, as well as the ability to adapt activities to meet individual needs and interests.</li>
+            </ul>
+            <h2>Expertise</h2>
+            <div class="expertise">
+                <p>I specialize in database management, SQL query optimization, and relational database design. My expertise extends to backend development, data structuring, and process automation using Python and Java. I have experience in network security and have obtained CCNA certification, ensuring strong networking knowledge.</p>
             </div>
         </div>
     </div>

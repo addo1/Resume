@@ -15,57 +15,14 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
-}
-
-/* Only the Top Section is Colored */
-.header-wrapper {
-    background-color: #f8dfd4;
-    height: 100px; /* Controls the height of the top colored section */
-}
-
-/* Header with Name and Image */
-.header {
     display: flex;
-    align-items: center;
-    padding: 20px;
-    background: white; /* Keeps this section white */
-    position: relative;
-    margin-top: -50px; /* Pulls the section up over the colored background */
-    padding-left: 40px;
 }
 
-.header img {
-    width: 120px;
-    border-radius: 50%;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header-text {
-    flex: 1;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.header p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Main Content Layout */
-.content {
-    display: flex;
-    padding: 40px;
-}
-
-/* Sidebar for Contact Details */
+/* Sidebar (Left Section with Contact, Education, Skills, and Languages) */
 .sidebar {
-    width: 35%;
-    padding-right: 20px;
+    width: 30%;
+    padding: 40px;
+    background-color: #f8dfd4;
 }
 
 .sidebar p, .sidebar a {
@@ -82,9 +39,10 @@ body {
     text-decoration: underline;
 }
 
-/* Main Content (Right Side) */
+/* Main Content (Right Side with About Me, Work Experience, and Expertise) */
 .main-content {
-    width: 65%;
+    width: 70%;
+    padding: 40px;
 }
 
 /* Section Titles */
@@ -96,23 +54,34 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Work Experience Section with Bullet Points */
+/* Work Experience Timeline */
 .timeline {
+    position: relative;
     list-style: none;
     padding-left: 20px;
 }
 
 .timeline li {
+    position: relative;
     margin-bottom: 20px;
     padding-left: 20px;
-    position: relative;
 }
 
 .timeline li::before {
-    content: '\2022'; /* Bullet point */
+    content: '\25CF'; /* Bullet point */
     position: absolute;
     left: 0;
-    top: 3px;
-    font-size: 18px;
+    top: 5px;
+    font-size: 16px;
     color: #333;
+}
+
+/* Expertise Section */
+.expertise {
+    margin-top: 30px;
+}
+
+.expertise p {
+    font-size: 14px;
+    line-height: 1.6;
 }
