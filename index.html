@@ -26,15 +26,19 @@
         .header {
             background-color: #f8dfd4;
             padding: 40px;
-            text-align: center;
+            display: flex;
+            align-items: center;
         }
         .header img {
             width: 120px;
             border-radius: 50%;
-            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+        .header-text {
+            flex: 1;
         }
         .header h1 {
-            margin: 10px 0 5px;
+            margin: 0;
             font-size: 32px;
             font-weight: bold;
         }
@@ -73,14 +77,13 @@
             margin-bottom: 15px;
         }
         .timeline {
-            position: relative;
             list-style: none;
             padding-left: 20px;
         }
         .timeline li {
-            position: relative;
             margin-bottom: 20px;
             padding-left: 20px;
+            position: relative;
         }
         .timeline li::before {
             content: '\2022'; /* Bullet point */
@@ -96,8 +99,10 @@
     <div class="cv-container">
         <div class="header">
             <img src="profile.jpg" alt="Profile Picture">
-            <h1>Yahye Addo</h1>
-            <p>Data Engineer</p>
+            <div class="header-text">
+                <h1>Yahye Addo</h1>
+                <p>Data Engineer</p>
+            </div>
         </div>
         <div class="content">
             <div class="sidebar">
