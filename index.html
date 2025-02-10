@@ -19,21 +19,36 @@
         .cv-container {
             width: 900px;
             background: white;
-            display: flex;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             overflow: hidden;
         }
-        .sidebar {
-            width: 35%;
+        .header {
             background-color: #f8dfd4;
-            padding: 30px;
+            padding: 40px;
             text-align: center;
         }
-        .sidebar img {
+        .header img {
             width: 120px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 10px 0 5px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+        .content {
+            display: flex;
+            padding: 40px;
+        }
+        .sidebar {
+            width: 35%;
+            padding-right: 20px;
         }
         .sidebar p, .sidebar a {
             color: #333;
@@ -47,14 +62,8 @@
         .sidebar a:hover {
             text-decoration: underline;
         }
-        .content {
+        .main-content {
             width: 65%;
-            padding: 40px;
-        }
-        h1 {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 5px;
         }
         h2 {
             font-size: 18px;
@@ -63,84 +72,56 @@
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
-        .section {
-            margin-bottom: 20px;
-        }
         .timeline {
             position: relative;
+            list-style: none;
+            padding-left: 20px;
         }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 10px;
-            top: 0;
-            width: 2px;
-            height: 100%;
-            background: #333;
-        }
-        .timeline-item {
-            padding-left: 30px;
+        .timeline li {
             position: relative;
             margin-bottom: 20px;
+            padding-left: 20px;
         }
-        .timeline-item::before {
-            content: '\25CF';
+        .timeline li::before {
+            content: '\2022'; /* Bullet point */
             position: absolute;
-            left: 2px;
-            top: 5px;
-            font-size: 14px;
+            left: 0;
+            top: 3px;
+            font-size: 18px;
             color: #333;
         }
     </style>
 </head>
 <body>
     <div class="cv-container">
-        <div class="sidebar">
+        <div class="header">
             <img src="profile.jpg" alt="Profile Picture">
             <h1>Yahye Addo</h1>
             <p>Data Engineer</p>
-            <p>📞 <a href="tel:+46739874377">+46739874377</a></p>
-            <p>📧 <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a></p>
-            <p>🌍 <a href="https://github.com/addo1" target="_blank">github.com/addo1</a></p>
-            <p>📍 Trollhättan</p>
         </div>
         <div class="content">
-            <div class="section">
+            <div class="sidebar">
+                <p>📞 <a href="tel:+46739874377">+46739874377</a></p>
+                <p>📧 <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a></p>
+                <p>🌍 <a href="https://github.com/addo1" target="_blank">github.com/addo1</a></p>
+                <p>📍 Trollhättan</p>
+            </div>
+            <div class="main-content">
                 <h2>About Me</h2>
                 <p>Hi, my name is Yahye and I am 28 years old. I am currently in my second year studying Computer Engineering at University West...</p>
-            </div>
-            <div class="section">
                 <h2>Education</h2>
                 <p><strong>Computer Engineering</strong> - University West (2023 - )</p>
                 <p><strong>Natural Sciences Program</strong> - Hvitfeldtska High School (2012 - 2015)</p>
-            </div>
-            <div class="section">
                 <h2>Skills</h2>
                 <p>Python, C++, CCNA, HTML, CSS, JAVA, SQL & Relational Databases, Database Management, SQL Query Optimization</p>
-            </div>
-            <div class="section">
                 <h2>Languages</h2>
                 <p>English, Swedish</p>
-            </div>
-            <div class="section">
                 <h2>Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <p><strong>2019 - 2023</strong> Volvo Torslanda</p>
-                        <p><strong>Forklift Operator</strong></p>
-                        <p>I have worked as a forklift operator at Volvo...</p>
-                    </div>
-                    <div class="timeline-item">
-                        <p><strong>2016 - 2018</strong> Plastal, Arendal</p>
-                        <p><strong>Assembler</strong></p>
-                        <p>As an assembler, I have gained valuable experience...</p>
-                    </div>
-                    <div class="timeline-item">
-                        <p><strong>2015 - 2016</strong> Solbackeskolan</p>
-                        <p><strong>Recreational Instructor</strong></p>
-                        <p>As a recreational instructor, I have had the privilege to work...</p>
-                    </div>
-                </div>
+                <ul class="timeline">
+                    <li><strong>2019 - 2023</strong> Volvo Torslanda<br><strong>Forklift Operator</strong><br>I have worked as a forklift operator at Volvo...</li>
+                    <li><strong>2016 - 2018</strong> Plastal, Arendal<br><strong>Assembler</strong><br>As an assembler, I have gained valuable experience...</li>
+                    <li><strong>2015 - 2016</strong> Solbackeskolan<br><strong>Recreational Instructor</strong><br>As a recreational instructor, I have had the privilege to work...</li>
+                </ul>
             </div>
         </div>
     </div>

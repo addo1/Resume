@@ -1,42 +1,104 @@
-/* Improve Sidebar Design */
-.sidebar p {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 900px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Section (Top Colored Part) */
+.header {
+    background-color: #f8dfd4;
+    padding: 40px;
+    text-align: center;
+}
+
+.header img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 10px 0 5px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    padding: 40px;
+}
+
+/* Sidebar (Left Column with Contact Info) */
+.sidebar {
+    width: 35%;
+    padding-right: 20px;
+}
+
+.sidebar p, .sidebar a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 16px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-/* Add Some Space for Each Section */
-.section {
-    margin-bottom: 30px;
-    padding-bottom: 10px;
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
-/* Improve Work Experience Timeline */
+/* Main Content (Right Side) */
+.main-content {
+    width: 65%;
+}
+
+/* Section Headers */
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Work Experience Section with Bullet Points */
 .timeline {
     position: relative;
+    list-style: none;
     padding-left: 20px;
-    border-left: 2px solid #333;
 }
 
-.timeline-item {
+.timeline li {
     position: relative;
     margin-bottom: 20px;
     padding-left: 20px;
 }
 
-.timeline-item::before {
-    content: '●';
+.timeline li::before {
+    content: '\2022'; /* Bullet point */
     position: absolute;
-    left: -10px;
-    top: 5px;
-    font-size: 16px;
+    left: 0;
+    top: 3px;
+    font-size: 18px;
     color: #333;
 }
-
-/* Add Spacing for Education & Work Experience */
-h2 {
-    margin-top: 20px;
-}
- 
