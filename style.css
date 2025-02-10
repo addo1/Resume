@@ -20,7 +20,7 @@ body {
 /* Only the Top Section is Colored */
 .header-wrapper {
     background-color: #f8dfd4;
-    padding: 40px;
+    height: 100px; /* Controls the height of the top colored section */
 }
 
 /* Header with Name and Image */
@@ -29,13 +29,16 @@ body {
     align-items: center;
     padding: 20px;
     background: white; /* Keeps this section white */
-    border-radius: 8px;
+    position: relative;
+    margin-top: -50px; /* Pulls the section up over the colored background */
+    padding-left: 40px;
 }
 
 .header img {
     width: 120px;
     border-radius: 50%;
     margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-text {
