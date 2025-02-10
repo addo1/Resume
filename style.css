@@ -1,117 +1,42 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+/* Improve Sidebar Design */
+.sidebar p {
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
 }
 
-/* CV Container */
-.cv-container {
-    width: 800px;
-    background: white;
-    padding: 40px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+/* Add Some Space for Each Section */
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
 }
 
-/* Header Section */
-header {
-    text-align: center;
+/* Improve Work Experience Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #333;
+}
+
+.timeline-item {
+    position: relative;
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
-header h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
-    color: #222;
-}
-
-header p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-}
-
-/* Sections */
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 22px;
+.timeline-item::before {
+    content: '●';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    font-size: 16px;
     color: #333;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
 }
 
-/* Contact Details */
-.contact p {
-    font-size: 16px;
-    margin: 5px 0;
+/* Add Spacing for Education & Work Experience */
+h2 {
+    margin-top: 20px;
 }
-
-.contact a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* About Section */
-.about p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Skills List */
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills ul li {
-    background: #007BFF;
-    color: white;
-    display: inline-block;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    margin: 5px;
-}
-
-/* Education & Experience */
-.education p, .experience p {
-    font-size: 16px;
-    line-height: 1.4;
-    margin-bottom: 8px;
-}
-
-strong {
-    color: #222;
-}
-
-/* Responsive Design */
-@media (max-width: 850px) {
-    .cv-container {
-        width: 90%;
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .skills ul li {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-}
+ 
