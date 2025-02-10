@@ -1,114 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-}
-
-.cv-container {
-    width: 900px;
-    background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-/* Header Section with Profile Picture */
-.header {
-    background-color: #f8dfd4;
-    padding: 40px;
-    text-align: center;
-}
-
-.header img {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.header h1 {
-    margin: 10px 0 5px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header p {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Layout */
-.content {
-    display: flex;
-    padding: 40px;
-}
-
-/* Sidebar (Left Section) */
-.sidebar {
-    width: 30%;
-    padding-right: 20px;
-}
-
-.sidebar p, .sidebar a {
-    color: #333;
-    font-size: 12px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content (Right Side) */
-.main-content {
-    width: 70%;
-}
-
-/* Section Titles */
-h2 {
-    font-size: 16px;
-    font-weight: bold;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-/* Work Experience Timeline */
+/* Work Experience Timeline with Vertical Lines */
 .timeline {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
 }
 
 .timeline li {
-    margin-bottom: 15px;
-    padding-left: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
     font-size: 12px;
-    line-height: 1.6; /* Ensures readability */
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline li::before {
-    content: '\25CF'; /* Bullet point */
+    content: '';
     position: absolute;
-    left: 0;
+    left: -5px;
     top: 5px;
-    font-size: 12px;
-    color: #333;
-}
-
-/* Expertise Section */
-.expertise {
-    margin-top: 20px;
-}
-
-.expertise p {
-    font-size: 12px;
-    line-height: 1.6; /* Ensures readability */
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
 }
