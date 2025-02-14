@@ -35,3 +35,25 @@
     border: 2px solid #333;
     border-radius: 50%;
 }
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding-left: 15px; /* Reduce left padding */
+    }
+
+    .timeline::before {
+        left: 8px; /* Move vertical line closer */
+    }
+
+    .timeline li {
+        padding-left: 20px; /* Adjust padding */
+        font-size: 14px; /* Increase readability */
+    }
+
+    .timeline li::before {
+        left: -2px; /* Adjust bullet point position */
+        width: 8px; /* Reduce bullet size */
+        height: 8px;
+    }
+}
