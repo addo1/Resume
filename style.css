@@ -1,59 +1,100 @@
-/* Work Experience Timeline with Vertical Lines */
-.timeline {
-    list-style: none;
-    padding-left: 30px;
-    position: relative;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #333;
-}
-
-.timeline li {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 30px;
-    font-size: 12px;
-    display: flex;
-    flex-direction: column;
-}
-
-.timeline li::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border: 2px solid #333;
-    border-radius: 50%;
-}
-
-/* Mobile Optimization */
+/* Global adjustments for better mobile experience */
 @media screen and (max-width: 768px) {
+    .cv-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header img {
+        width: 90px; /* Reduce profile picture size */
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .sidebar p, .sidebar a {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    /* Fixing overlapping issues */
+    .about-me {
+        padding: 10px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    /* Timeline Adjustments */
     .timeline {
-        padding-left: 15px; /* Reduce left padding */
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
     }
 
     .timeline::before {
-        left: 8px; /* Move vertical line closer */
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #333;
     }
 
     .timeline li {
-        padding-left: 20px; /* Adjust padding */
-        font-size: 14px; /* Increase readability */
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
     }
 
     .timeline li::before {
-        left: -2px; /* Adjust bullet point position */
-        width: 8px; /* Reduce bullet size */
+        content: '';
+        position: absolute;
+        left: -3px;
+        top: 5px;
+        width: 8px;
         height: 8px;
+        background-color: #fff;
+        border: 2px solid #333;
+        border-radius: 50%;
+    }
+
+    /* Fixing spacing for text alignment */
+    .work-experience {
+        padding: 10px;
+    }
+
+    .education {
+        padding: 10px;
+    }
+
+    .skills {
+        padding: 10px;
     }
 }
