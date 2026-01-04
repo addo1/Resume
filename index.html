@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yahye Addo — Resume</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="page">
-    <!-- Header: 3 columns on desktop, stacks on mobile -->
     <header class="header">
       <div class="header__left">
         Gothenburg &amp; Trollhattan<br />
@@ -25,6 +24,7 @@
       </div>
     </header>
 
+    <!-- EDUCATION -->
     <section class="section">
       <div class="section__title">Education</div>
       <hr class="rule" />
@@ -48,6 +48,7 @@
       </ul>
     </section>
 
+    <!-- EMPLOYMENT -->
     <section class="section">
       <div class="section__title">Employment</div>
       <hr class="rule" />
@@ -58,6 +59,7 @@
         <div class="subhead__right">Aug 2025 – Dec 2025</div>
       </div>
       <div class="subnote">Pak kret, Bangkok, Thailand</div>
+
       <ul class="bullets">
         <li>Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.</li>
         <li>Designed and consumed mock REST APIs to parallelize frontend/backend development and reduce integration risk.</li>
@@ -66,6 +68,7 @@
       </ul>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section">
       <div class="section__title">Projects</div>
       <hr class="rule" />
@@ -73,25 +76,35 @@
       <ul class="bullets">
         <li>
           <strong>Fear of Kaunas</strong>
-          (<a href="https://github.com/addo1/FearOfKaunas">github.com/addo1/FearOfKaunas</a>) —
-          Co-developed and presented a playable 3D horror game… Tools used: Godot, Blender, Git, GitHub, GDScript, Trello, Figma
+          (<a href="https://github.com/addo1/FearOfKaunas">github.com/addo1/FearOfKaunas</a>)
+          Co-developed and presented a playable 3D horror game built with Godot and custom Blender assets as part of a 4-person team, contributing asset creation, gameplay logic, and engine integration; project received a top grade (10/10), was publicly presented at Kaunas University of Technology, and delivered under a fixed academic deadline.
+          <span class="tools">Tools used:</span>
+          Godot Engine, Blender, Git, GitHub, GDScript, Trello (project management), Figma (UI/UX planning)
         </li>
+
         <li>
           <strong>Lunch Booking Web App (DEPLOYED)</strong>
-          (<a href="https://addo1.pythonanywhere.com/">addo1.pythonanywhere.com</a>) —
-          Designed, built, and deployed a full-stack Django web app… Tools used: Python, Django, HTML, CSS, JS, SQLite, Git, GitHub, PythonAnywhere
+          (<a href="https://addo1.pythonanywhere.com/">addo1.pythonanywhere.com</a>)
+          Designed, built, and deployed a full-stack Django web application for real-time lunch menu browsing and table booking, implementing transactional conflict-prevention logic that resolved observed race conditions during concurrent booking attempts in production, and deploying the system on PythonAnywhere using PostgreSQL with server-rendered HTML, CSS, and JavaScript.
+          <span class="tools">Tools used:</span>
+          Python, Django, HTML, CSS, JavaScript, SQLite, Git, GitHub, PythonAnywhere
         </li>
       </ul>
     </section>
 
+    <!-- LANGUAGES & TECHNOLOGIES -->
     <section class="section">
       <div class="section__title">Language and technologies</div>
       <hr class="rule" />
 
-      <p class="skills">
-        Python, TypeScript, JavaScript, C++, React, HTML5, CSS3, Django, Node.js, NestJS, RESTful APIs,
-        PostgreSQL, SQLite, Git, GitHub, SOC operations, SIEM (ELK), incident response, TCP/IP, routing, switching
-      </p>
+      <ul class="bullets">
+        <li>
+          Python, TypeScript, JavaScript, C++, React, HTML5, CSS3, Django, Node.js, NestJS, RESTful APIs,
+          PostgreSQL, SQLite, Git, GitHub, and cybersecurity &amp; networking fundamentals through
+          Cisco Networking Academy (CyberOps Associate, CCNA), including SOC operations, threat detection,
+          SIEM (ELK), incident response, network intrusion analysis, TCP/IP, routing, and switching
+        </li>
+      </ul>
     </section>
   </main>
 </body>
