@@ -1,156 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yahye Addo - CV</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-        }
-        .cv-container {
-            width: 900px;
-            background: white;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        .header {
-            background-color: #f8dfd4;
-            padding: 20px 40px;
-            display: flex;
-            align-items: center;
-        }
-        .header img {
-            width: 100px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .header-text {
-            display: flex;
-            flex-direction: column;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .header p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #666;
-        }
-        .content {
-            display: flex;
-            padding: 40px;
-        }
-        .sidebar {
-            width: 30%;
-            padding-right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .sidebar p, .sidebar a {
-            color: #333;
-            font-size: 12px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 8px;
-        }
-        .sidebar a:hover {
-            text-decoration: underline;
-        }
-        .main-content {
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-        }
-        h2 {
-            font-size: 16px;
-            font-weight: bold;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        .timeline {
-            list-style: none;
-            padding-left: 20px;
-        }
-        .timeline li {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            font-size: 12px;
-            display: flex;
-            flex-direction: column;
-        }
-        .timeline li::before {
-            content: '\25CF'; /* Bullet point */
-            position: absolute;
-            left: 0;
-            top: 5px;
-            font-size: 12px;
-            color: #333;
-        }
-        .expertise {
-            margin-top: 20px;
-        }
-        .expertise p {
-            font-size: 12px;
-            line-height: 1.4;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yahye Addo — Resume</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="cv-container">
-        <div class="header">
-            <img src="profile.jpg" alt="Profile Picture">
-            <div class="header-text">
-                <h1>Yahye Addo</h1>
-                <p>Software Engineer</p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="sidebar">
-                <p>📞 <a href="tel:+46739874377">+46739874377</a></p>
-                <p>📧 <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a></p>
-                <p>🌍 <a href="https://github.com/addo1" target="_blank">github.com/addo1</a></p>
-                <p>📍 Trollhättan</p>
-                <h2>Education</h2>
-                <p><strong>Computer Engineering</strong> - University West (2023 - )</p>
-                <p><strong>Natural Sciences Program</strong> - Hvitfeldtska High School (2012 - 2015)</p>
-                <h2>Skills</h2>
-                <p>Python, C++, CCNA, HTML, CSS, JAVA, SQL & Relational Databases, Database Management, SQL Query Optimization</p>
-                <h2>Languages</h2>
-                <p>English, Swedish</p>
-            </div>
-            <div class="main-content">
-                <h2>About Me</h2>
-                <p style="font-size: 12px; line-height: 1.4;">Hi, my name is Yahye and I am 28 years old. I am currently in my second year studying Computer Engineering at University West. I am passionate about both technology and innovation and always strive to develop my skills and knowledge in this field. In my free time, I love trying new activities, working out, and socializing with friends. I value teamwork and always look forward to learning from others. Feel free to check out my GitHub or LinkedIn to see some of my past projects.</p>
-                <h2>Work Experience</h2>
-                <ul class="timeline">
-                    <li><strong>2019 - 2023</strong> Volvo Torslanda<br><strong>Forklift Operator</strong><br>I have worked as a forklift operator at Volvo, which has given me a deep understanding of both production and management. This experience has taught me the importance of patience and teamwork. In a fast-paced and dynamic work environment, the ability to communicate and build relationships with colleagues is crucial for success.</li>
-                    <li><strong>2016 - 2018</strong> Plastal, Arendal<br><strong>Assembler</strong><br>As an assembler, I have gained valuable experience in working with precision and accuracy in production. This role has taught me the importance of following guidelines and safety regulations carefully.</li>
-                    <li><strong>2015 - 2016</strong> Solbackeskolan<br><strong>Recreational Instructor</strong><br>As a recreational instructor, I have had the privilege to work with children and youth of various ages. This experience has taught me the importance of creating a safe and stimulating environment where everyone can thrive and develop. I have also developed my communication and conflict-resolution skills, as well as the ability to adapt activities to meet individual needs and interests.</li>
-                </ul>
-                <h2>Expertise</h2>
-                <div class="expertise">
-                    <p style="font-size: 12px; line-height: 1.4;">I specialize in database management, SQL query optimization, and relational database design. My expertise extends to backend development, data structuring, and process automation using Python and Java. I have experience in network security and have obtained CCNA certification, ensuring strong networking knowledge.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+  <main class="page">
+    <!-- Header: 3 columns on desktop, stacks on mobile -->
+    <header class="header">
+      <div class="header__left">
+        Gothenburg &amp; Trollhattan<br />
+        +46739874377
+      </div>
+
+      <div class="header__center">
+        <h1 class="name">Yahye Addo</h1>
+      </div>
+
+      <div class="header__right">
+        <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a><br />
+        <a href="https://www.linkedin.com/in/yahye-addo/">linkedin.com/in/yahye-addo</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section__title">Education</div>
+      <hr class="rule" />
+
+      <div class="subhead">
+        <div class="subhead__left">Trollhattan, Sweden</div>
+        <div class="subhead__center">University West</div>
+        <div class="subhead__right">Aug 2023 | Present</div>
+      </div>
+      <ul class="bullets">
+        <li>B.Sc in Computer Science.</li>
+      </ul>
+
+      <div class="subhead">
+        <div class="subhead__left">Bangkok, Thailand</div>
+        <div class="subhead__center">SIIT, Thammasat University</div>
+        <div class="subhead__right">Aug 2025 | Dec 2025</div>
+      </div>
+      <ul class="bullets">
+        <li>B.Sc in Computer Science (Exchange Program).</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section__title">Employment</div>
+      <hr class="rule" />
+
+      <div class="subhead">
+        <div class="subhead__left">Software Engineer, Intern</div>
+        <div class="subhead__center">Vansales</div>
+        <div class="subhead__right">Aug 2025 – Dec 2025</div>
+      </div>
+      <div class="subnote">Pak kret, Bangkok, Thailand</div>
+      <ul class="bullets">
+        <li>Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.</li>
+        <li>Designed and consumed mock REST APIs to parallelize frontend/backend development and reduce integration risk.</li>
+        <li>Applied component-driven architecture and type safety to improve maintainability and deployment readiness.</li>
+        <li>Worked in a 2-person engineering team with weekly code reviews and mentor-led technical discussions; contributed production code that was reviewed, approved, and merged following team conventions.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section__title">Projects</div>
+      <hr class="rule" />
+
+      <ul class="bullets">
+        <li>
+          <strong>Fear of Kaunas</strong>
+          (<a href="https://github.com/addo1/FearOfKaunas">github.com/addo1/FearOfKaunas</a>) —
+          Co-developed and presented a playable 3D horror game… Tools used: Godot, Blender, Git, GitHub, GDScript, Trello, Figma
+        </li>
+        <li>
+          <strong>Lunch Booking Web App (DEPLOYED)</strong>
+          (<a href="https://addo1.pythonanywhere.com/">addo1.pythonanywhere.com</a>) —
+          Designed, built, and deployed a full-stack Django web app… Tools used: Python, Django, HTML, CSS, JS, SQLite, Git, GitHub, PythonAnywhere
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section__title">Language and technologies</div>
+      <hr class="rule" />
+
+      <p class="skills">
+        Python, TypeScript, JavaScript, C++, React, HTML5, CSS3, Django, Node.js, NestJS, RESTful APIs,
+        PostgreSQL, SQLite, Git, GitHub, SOC operations, SIEM (ELK), incident response, TCP/IP, routing, switching
+      </p>
+    </section>
+  </main>
 </body>
 </html>
