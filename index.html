@@ -1,111 +1,112 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yahye Addo — Resume</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="page">
-    <header class="header">
-      <div class="header__left">
-        Gothenburg &amp; Trollhattan<br />
-        +46739874377
-      </div>
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
 
-      <div class="header__center">
-        <h1 class="name">Yahye Addo</h1>
-      </div>
+\documentclass[]{mcdowellcv}
 
-      <div class="header__right">
-        <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a><br />
-        <a href="https://www.linkedin.com/in/yahye-addo/">linkedin.com/in/yahye-addo</a>
-      </div>
-    </header>
+% For mathematical symbols
+\usepackage{amsmath}
 
-    <!-- EDUCATION -->
-    <section class="section">
-      <div class="section__title">Education</div>
-      <hr class="rule" />
+% Set applicant's personal data for header
+\name{Yahye Addo}
+\address{Gothenburg \& Trollhattan \linebreak +46739874377}
+\contacts{e7lt@hotmail.com \linebreak https://www.linkedin.com/in/yahye-addo/}
 
-      <div class="subhead">
-        <div class="subhead__left">Trollhattan, Sweden</div>
-        <div class="subhead__center">University West</div>
-        <div class="subhead__right">Aug 2023 | Present</div>
-      </div>
-      <ul class="bullets">
-        <li>B.Sc in Computer Science.</li>
-      </ul>
+\begin{document}
 
-      <div class="subhead">
-        <div class="subhead__left">Bangkok, Thailand</div>
-        <div class="subhead__center">SIIT, Thammasat University</div>
-        <div class="subhead__right">Aug 2025 | Dec 2025</div>
-      </div>
-      <ul class="bullets">
-        <li>B.Sc in Computer Science (Exchange Program).</li>
-      </ul>
-    </section>
+	% Print the header
+	\makeheader
+	
+	% --- EDUCATION ---
+	\begin{cvsection}{Education}
+		
+		\begin{cvsubsection}{Trollhattan, Sweden}{University West}{Aug 2023 \,-- Present}
+			\begin{itemize}
+				\item M.Sc. in AI and Automation (Current)
+				\item B.Sc. in Computer Science (Completed)
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Bangkok, Thailand}{Sirindhorn International Institute of Technology (SIIT), Thammasat University}{Aug 2025 \,-- Dec 2025}
+			\begin{itemize}
+				\item B.Sc. in Computer Science (Exchange Program).
+			\end{itemize}
+		\end{cvsubsection}
+		
+	\end{cvsection}
+	
+	% --- EMPLOYMENT & EXPERIENCE ---
+	\begin{cvsection}{Employment \& Experience}
+		
+		\begin{cvsubsection}{Computer Vision Engineer (Thesis)}{Recas}{2026}
+			Recas
+			\begin{itemize}
+				\item Conducted bachelor's thesis focusing on distributed 3D localization using computer vision.
+				\item Developed a multi-camera system in Python and C++ involving data processing, real-time analysis, and embedded systems.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer, Intern}{Vansales}{Aug 2025 \,-- Dec 2025}
+			Pak kret, Bangkok, Thailand
+			\begin{itemize}
+				\item Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.
+				\item Designed and consumed mock REST APIs to parallelize frontend/backend development and reduce integration risk.
+				\item Applied component-driven architecture and type safety to improve maintainability and deployment readiness.
+				\item Worked in a 2-person engineering team with weekly code reviews and mentor-led technical discussions; contributed production code that was reviewed, approved, and merged following team conventions.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Truck driver / Forklift Operator}{Volvo}{Dec 2019 \,-- July 2023}
+			Volvo, Gothenburg
+			\begin{itemize}
+				\item Worked in a high-throughput industrial environment, developing discipline, reliability, and cross-team communication under real operational constraints.
+			\end{itemize}
+		\end{cvsubsection}
+		
+	\end{cvsection}
+	
+	% --- PROJECTS ---
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\setlength\itemsep{3pt}
+				\item \textbf{Fear of Kaunas} (https://github.com/addo1/FearOfKaunas)
+				Co-developed and presented a playable 3D horror game built with Godot and custom Blender assets as part of a 4-person team, contributing asset creation, gameplay logic, and engine integration; project received a top grade (10/10), was publicly presented at Kaunas University of Technology, and delivered under a fixed academic deadline.
+				
+				\item \textbf{Lunch Booking Web App (DEPLOYED)} (https://addo1.pythonanywhere.com/)
+				Designed, built, and deployed a full-stack Django web application for real-time lunch menu browsing and table booking, implementing transactional conflict-prevention logic that resolved observed race conditions during concurrent booking attempts in production.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	% --- LANGUAGE AND TECHNOLOGIES ---
+	\begin{cvsection}{Language and technologies}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Programming \& Frameworks:} Python, TypeScript, JavaScript, C++, React, Django, Node.js, NestJS, RESTful APIs, HTML5, CSS3
+				\item \textbf{AI \& Specialized Fields:} Computer Vision, Multi-camera Systems, Real-time Data Processing, 3D Localization
+				\item \textbf{Databases \& Tools:} PostgreSQL, SQLite, Git, GitHub, Trello, Figma
+				\item \textbf{Networking \& Security:} Cybersecurity & networking fundamentals through Cisco Networking Academy (CyberOps Associate, CCNA), including SOC operations, threat detection, SIEM (ELK), incident response, network intrusion analysis, TCP/IP, routing, and switching.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
 
-    <!-- EMPLOYMENT -->
-    <section class="section">
-      <div class="section__title">Employment</div>
-      <hr class="rule" />
-
-      <div class="subhead">
-        <div class="subhead__left">Software Engineer, Intern</div>
-        <div class="subhead__center">Vansales</div>
-        <div class="subhead__right">Aug 2025 – Dec 2025</div>
-      </div>
-      <div class="subnote">Pak kret, Bangkok, Thailand</div>
-
-      <ul class="bullets">
-        <li>Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.</li>
-        <li>Designed and consumed mock REST APIs to parallelize frontend/backend development and reduce integration risk.</li>
-        <li>Applied component-driven architecture and type safety to improve maintainability and deployment readiness.</li>
-        <li>Worked in a 2-person engineering team with weekly code reviews and mentor-led technical discussions; contributed production code that was reviewed, approved, and merged following team conventions.</li>
-      </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section">
-      <div class="section__title">Projects</div>
-      <hr class="rule" />
-
-      <ul class="bullets">
-        <li>
-          <strong>Fear of Kaunas</strong>
-          (<a href="https://github.com/addo1/FearOfKaunas">github.com/addo1/FearOfKaunas</a>)
-          Co-developed and presented a playable 3D horror game built with Godot and custom Blender assets as part of a 4-person team, contributing asset creation, gameplay logic, and engine integration; project received a top grade (10/10), was publicly presented at Kaunas University of Technology, and delivered under a fixed academic deadline.
-          <span class="tools">Tools used:</span>
-          Godot Engine, Blender, Git, GitHub, GDScript, Trello (project management), Figma (UI/UX planning)
-        </li>
-
-        <li>
-          <strong>Lunch Booking Web App (DEPLOYED)</strong>
-          (<a href="https://addo1.pythonanywhere.com/">addo1.pythonanywhere.com</a>)
-          Designed, built, and deployed a full-stack Django web application for real-time lunch menu browsing and table booking, implementing transactional conflict-prevention logic that resolved observed race conditions during concurrent booking attempts in production, and deploying the system on PythonAnywhere using PostgreSQL with server-rendered HTML, CSS, and JavaScript.
-          <span class="tools">Tools used:</span>
-          Python, Django, HTML, CSS, JavaScript, SQLite, Git, GitHub, PythonAnywhere
-        </li>
-      </ul>
-    </section>
-
-    <!-- LANGUAGES & TECHNOLOGIES -->
-    <section class="section">
-      <div class="section__title">Language and technologies</div>
-      <hr class="rule" />
-
-      <ul class="bullets">
-        <li>
-          Python, TypeScript, JavaScript, C++, React, HTML5, CSS3, Django, Node.js, NestJS, RESTful APIs,
-          PostgreSQL, SQLite, Git, GitHub, and cybersecurity &amp; networking fundamentals through
-          Cisco Networking Academy (CyberOps Associate, CCNA), including SOC operations, threat detection,
-          SIEM (ELK), incident response, network intrusion analysis, TCP/IP, routing, and switching
-        </li>
-      </ul>
-    </section>
-  </main>
-</body>
-</html>
+\end{document}
