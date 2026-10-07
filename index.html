@@ -1,112 +1,205 @@
-%% The MIT License (MIT)
-%%
-%% Copyright (c) 2015 Daniil Belyakov
-%%
-%% Permission is hereby granted, free of charge, to any person obtaining a copy
-%% of this software and associated documentation files (the "Software"), to deal
-%% in the Software without restriction, including without limitation the rights
-%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%% copies of the Software, and to permit persons to whom the Software is
-%% furnished to do so, subject to the following conditions:
-%%
-%% The above copyright notice and this permission notice shall be included in all
-%% copies or substantial portions of the Software.
-%%
-%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-%% SOFTWARE.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahye Addo - CV</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fdfdfd;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            letter-spacing: 1px;
+        }
+        .contact-info {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .contact-info a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 1.3em;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            color: #111;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .job, .school, .project {
+            margin-bottom: 20px;
+        }
+        .job-header, .school-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .job-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        ul {
+            margin: 5px 0 15px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+        .tech-stack {
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
 
-\documentclass[]{mcdowellcv}
+    <header>
+        <h1>Yahye Addo</h1>
+        <div class="contact-info">
+            Gothenburg & Trollhättan | +46739874377 | 
+            <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a> | 
+            <a href="https://www.linkedin.com/in/yahye-addo/" target="_blank">LinkedIn</a>
+        </div>
+    </header>
 
-% For mathematical symbols
-\usepackage{amsmath}
+    <section>
+        <h2>Education</h2>
+        
+        <div class="school">
+            <div class="school-header">
+                <span>University West</span>
+                <span>Trollhättan, Sweden</span>
+            </div>
+            <div class="job-subheader">
+                <span>M.Sc. in AI and Automation (Current) & B.Sc. in Computer Science (Completed)</span>
+                <span>Aug 2023 – Present</span>
+            </div>
+        </div>
 
-% Set applicant's personal data for header
-\name{Yahye Addo}
-\address{Gothenburg \& Trollhattan \linebreak +46739874377}
-\contacts{e7lt@hotmail.com \linebreak https://www.linkedin.com/in/yahye-addo/}
+        <div class="school">
+            <div class="school-header">
+                <span>Sirindhorn International Institute of Technology (SIIT), Thammasat University</span>
+                <span>Bangkok, Thailand</span>
+            </div>
+            <div class="job-subheader">
+                <span>B.Sc. in Computer Science (Exchange Program)</span>
+                <span>Aug 2025 – Dec 2025</span>
+            </div>
+        </div>
+    </section>
 
-\begin{document}
+    <section>
+        <h2>Employment & Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span>Recas</span>
+                <span>Thesis / Computer Vision Engineer</span>
+            </div>
+            <div class="job-subheader">
+                <span>Bachelor's Thesis Project</span>
+                <span>2026</span>
+            </div>
+            <ul>
+                <li>Conducted bachelor's thesis focusing on distributed 3D localization using computer vision.</li>
+                <li>Developed a multi-camera system in Python and C++ involving data processing, real-time analysis, and embedded systems.</li>
+            </ul>
+        </div>
 
-	% Print the header
-	\makeheader
-	
-	% --- EDUCATION ---
-	\begin{cvsection}{Education}
-		
-		\begin{cvsubsection}{Trollhattan, Sweden}{University West}{Aug 2023 \,-- Present}
-			\begin{itemize}
-				\item M.Sc. in AI and Automation (Current)
-				\item B.Sc. in Computer Science (Completed)
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Bangkok, Thailand}{Sirindhorn International Institute of Technology (SIIT), Thammasat University}{Aug 2025 \,-- Dec 2025}
-			\begin{itemize}
-				\item B.Sc. in Computer Science (Exchange Program).
-			\end{itemize}
-		\end{cvsubsection}
-		
-	\end{cvsection}
-	
-	% --- EMPLOYMENT & EXPERIENCE ---
-	\begin{cvsection}{Employment \& Experience}
-		
-		\begin{cvsubsection}{Computer Vision Engineer (Thesis)}{Recas}{2026}
-			Recas
-			\begin{itemize}
-				\item Conducted bachelor's thesis focusing on distributed 3D localization using computer vision.
-				\item Developed a multi-camera system in Python and C++ involving data processing, real-time analysis, and embedded systems.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Engineer, Intern}{Vansales}{Aug 2025 \,-- Dec 2025}
-			Pak kret, Bangkok, Thailand
-			\begin{itemize}
-				\item Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.
-				\item Designed and consumed mock REST APIs to parallelize frontend/backend development and reduce integration risk.
-				\item Applied component-driven architecture and type safety to improve maintainability and deployment readiness.
-				\item Worked in a 2-person engineering team with weekly code reviews and mentor-led technical discussions; contributed production code that was reviewed, approved, and merged following team conventions.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Truck driver / Forklift Operator}{Volvo}{Dec 2019 \,-- July 2023}
-			Volvo, Gothenburg
-			\begin{itemize}
-				\item Worked in a high-throughput industrial environment, developing discipline, reliability, and cross-team communication under real operational constraints.
-			\end{itemize}
-		\end{cvsubsection}
-		
-	\end{cvsection}
-	
-	% --- PROJECTS ---
-	\begin{cvsection}{Projects}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\setlength\itemsep{3pt}
-				\item \textbf{Fear of Kaunas} (https://github.com/addo1/FearOfKaunas)
-				Co-developed and presented a playable 3D horror game built with Godot and custom Blender assets as part of a 4-person team, contributing asset creation, gameplay logic, and engine integration; project received a top grade (10/10), was publicly presented at Kaunas University of Technology, and delivered under a fixed academic deadline.
-				
-				\item \textbf{Lunch Booking Web App (DEPLOYED)} (https://addo1.pythonanywhere.com/)
-				Designed, built, and deployed a full-stack Django web application for real-time lunch menu browsing and table booking, implementing transactional conflict-prevention logic that resolved observed race conditions during concurrent booking attempts in production.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	% --- LANGUAGE AND TECHNOLOGIES ---
-	\begin{cvsection}{Language and technologies}
-		\begin{cvsubsection}{}{}{}
-			\begin{itemize}
-				\item \textbf{Programming \& Frameworks:} Python, TypeScript, JavaScript, C++, React, Django, Node.js, NestJS, RESTful APIs, HTML5, CSS3
-				\item \textbf{AI \& Specialized Fields:} Computer Vision, Multi-camera Systems, Real-time Data Processing, 3D Localization
-				\item \textbf{Databases \& Tools:} PostgreSQL, SQLite, Git, GitHub, Trello, Figma
-				\item \textbf{Networking \& Security:} Cybersecurity & networking fundamentals through Cisco Networking Academy (CyberOps Associate, CCNA), including SOC operations, threat detection, SIEM (ELK), incident response, network intrusion analysis, TCP/IP, routing, and switching.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
+        <div class="job">
+            <div class="job-header">
+                <span>Vansales</span>
+                <span>Software Engineer, Intern</span>
+            </div>
+            <div class="job-subheader">
+                <span>Pak Kret, Bangkok, Thailand</span>
+                <span>Aug 2025 – Dec 2025</span>
+            </div>
+            <ul>
+                <li>Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.</li>
+                <li>Designed and consumed mock REST APIs to parallelize frontend/backend development and reduce integration risk.</li>
+                <li>Applied component-driven architecture and type safety to improve maintainability and deployment readiness.</li>
+                <li>Worked in a 2-person engineering team with weekly code reviews and mentor-led technical discussions; contributed production code reviewed, approved, and merged following team conventions.</li>
+            </ul>
+        </div>
 
-\end{document}
+        <div class="job">
+            <div class="job-header">
+                <span>Volvo</span>
+                <span>Truck Driver / Forklift Operator</span>
+            </div>
+            <div class="job-subheader">
+                <span>Gothenburg, Sweden</span>
+                <span>Dec 2019 – July 2023</span>
+            </div>
+            <ul>
+                <li>Worked in a high-throughput industrial environment, developing discipline, reliability, and cross-team communication under real operational constraints.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <div class="job-header">
+                <span><a href="https://github.com/addo1/FearOfKaunas" target="_blank" style="color: #0366d6; text-decoration: none;">Fear of Kaunas</a></span>
+                <span>Team Project (10/10 Grade)</span>
+            </div>
+            <ul>
+                <li>Co-developed and presented a playable 3D horror game built with Godot and custom Blender assets as part of a 4-person team.</li>
+                <li>Contributed asset creation, gameplay logic, and engine integration; publicly presented at Kaunas University of Technology under a fixed academic deadline.</li>
+                <li><strong>Tools used:</strong> Godot Engine, Blender, Git, GitHub, GDScript, Trello, Figma</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="job-header">
+                <span><a href="https://addo1.pythonanywhere.com/" target="_blank" style="color: #0366d6; text-decoration: none;">Lunch Booking Web App (DEPLOYED)</a></span>
+                <span>Full-Stack App</span>
+            </div>
+            <ul>
+                <li>Designed, built, and deployed a full-stack Django web application for real-time lunch menu browsing and table booking.</li>
+                <li>Implemented transactional conflict-prevention logic to resolve race conditions during concurrent booking attempts in production.</li>
+                <li><strong>Tools used:</strong> Python, Django, HTML, CSS, JavaScript, SQLite, Git, GitHub, PythonAnywhere</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Language and Technologies</h2>
+        <ul>
+            <li><strong>Programming & Frameworks:</strong> Python, TypeScript, JavaScript, C++, React, Django, Node.js, NestJS, RESTful APIs, HTML5, CSS3</li>
+            <li><strong>AI & Specialized Fields:</strong> Computer Vision, Multi-camera Systems, Real-time Data Processing, 3D Localization</li>
+            <li><strong>Databases & Tools:</strong> PostgreSQL, SQLite, Git, GitHub, Trello, Figma</li>
+            <li><strong>Networking & Security:</strong> Cisco Networking Academy (CyberOps Associate, CCNA), including SOC operations, threat detection, SIEM (ELK), incident response, network intrusion analysis, TCP/IP, routing, and switching.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
