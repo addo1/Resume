@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yahye Addo - CV</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.5;
+            color: #222;
             max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #fdfdfd;
+            margin: 0 auto;
+            padding: 30px 20px;
+            background-color: #ffffff;
         }
         header {
             text-align: center;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
         }
         h1 {
-            margin: 0 0 10px 0;
+            margin: 0 0 8px 0;
             font-size: 2.2em;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            color: #111;
         }
         .contact-info {
             font-size: 0.95em;
-            color: #555;
+            color: #444;
         }
         .contact-info a {
             color: #0366d6;
@@ -37,42 +41,64 @@
             text-decoration: underline;
         }
         h2 {
-            font-size: 1.3em;
-            border-bottom: 1px solid #eaeaea;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            font-size: 1.1em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 15px;
             color: #111;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
-        .job, .school, .project {
-            margin-bottom: 20px;
+        .item {
+            margin-bottom: 18px;
         }
-        .job-header, .school-header {
+        .item-row {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 2px;
+        }
+        .item-title {
             font-weight: bold;
-            margin-bottom: 3px;
+            font-size: 1.02em;
+            color: #111;
         }
-        .job-subheader {
+        .item-location {
+            font-weight: normal;
+            color: #555;
+            font-size: 0.95em;
+        }
+        .item-subtitle {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 10px;
             font-style: italic;
-            color: #666;
+            color: #444;
             font-size: 0.95em;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         ul {
-            margin: 5px 0 15px 0;
-            padding-left: 20px;
+            margin: 4px 0 0 0;
+            padding-left: 18px;
         }
         li {
-            margin-bottom: 5px;
-            font-size: 0.95em;
+            margin-bottom: 4px;
+            font-size: 0.94em;
+            color: #333;
         }
-        .tech-stack {
-            font-size: 0.95em;
-            margin-top: 5px;
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            margin-bottom: 6px;
+            font-size: 0.94em;
         }
     </style>
 </head>
@@ -81,8 +107,8 @@
     <header>
         <h1>Yahye Addo</h1>
         <div class="contact-info">
-            Gothenburg & Trollhättan | +46739874377 | 
-            <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a> | 
+            Gothenburg & Trollhättan &bull; +46739874377 &bull; 
+            <a href="mailto:e7lt@hotmail.com">e7lt@hotmail.com</a> &bull; 
             <a href="https://www.linkedin.com/in/yahye-addo/" target="_blank">LinkedIn</a>
         </div>
     </header>
@@ -90,25 +116,25 @@
     <section>
         <h2>Education</h2>
         
-        <div class="school">
-            <div class="school-header">
-                <span>University West</span>
-                <span>Trollhättan, Sweden</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title">University West</span>
+                <span class="item-location">Trollhättan, Sweden</span>
             </div>
-            <div class="job-subheader">
-                <span>M.Sc. in AI and Automation (Current) & B.Sc. in Computer Science (Completed)</span>
-                <span>Aug 2023 – Present</span>
+            <div class="item-subtitle">
+                <span>M.Sc. in AI and Automation (Current) &bull; B.Sc. in Computer Science (Completed)</span>
+                <span>Aug 2023 &ndash; Present</span>
             </div>
         </div>
 
-        <div class="school">
-            <div class="school-header">
-                <span>Sirindhorn International Institute of Technology (SIIT), Thammasat University</span>
-                <span>Bangkok, Thailand</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title">Sirindhorn International Institute of Technology (SIIT), Thammasat University</span>
+                <span class="item-location">Bangkok, Thailand</span>
             </div>
-            <div class="job-subheader">
+            <div class="item-subtitle">
                 <span>B.Sc. in Computer Science (Exchange Program)</span>
-                <span>Aug 2025 – Dec 2025</span>
+                <span>Aug 2025 &ndash; Dec 2025</span>
             </div>
         </div>
     </section>
@@ -116,12 +142,12 @@
     <section>
         <h2>Employment & Experience</h2>
         
-        <div class="job">
-            <div class="job-header">
-                <span>Recas</span>
-                <span>Thesis / Computer Vision Engineer</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title">Recas</span>
+                <span class="item-location">Computer Vision Engineer (Thesis)</span>
             </div>
-            <div class="job-subheader">
+            <div class="item-subtitle">
                 <span>Bachelor's Thesis Project</span>
                 <span>2026</span>
             </div>
@@ -131,14 +157,14 @@
             </ul>
         </div>
 
-        <div class="job">
-            <div class="job-header">
-                <span>Vansales</span>
-                <span>Software Engineer, Intern</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title">Vansales</span>
+                <span class="item-location">Pak Kret, Bangkok, Thailand</span>
             </div>
-            <div class="job-subheader">
-                <span>Pak Kret, Bangkok, Thailand</span>
-                <span>Aug 2025 – Dec 2025</span>
+            <div class="item-subtitle">
+                <span>Software Engineer, Intern</span>
+                <span>Aug 2025 &ndash; Dec 2025</span>
             </div>
             <ul>
                 <li>Built a scalable React + TypeScript frontend structured for seamless integration with a future Node.js / NestJS backend.</li>
@@ -148,14 +174,14 @@
             </ul>
         </div>
 
-        <div class="job">
-            <div class="job-header">
-                <span>Volvo</span>
-                <span>Truck Driver / Forklift Operator</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title">Volvo</span>
+                <span class="item-location">Gothenburg, Sweden</span>
             </div>
-            <div class="job-subheader">
-                <span>Gothenburg, Sweden</span>
-                <span>Dec 2019 – July 2023</span>
+            <div class="item-subtitle">
+                <span>Truck Driver / Forklift Operator</span>
+                <span>Dec 2019 &ndash; July 2023</span>
             </div>
             <ul>
                 <li>Worked in a high-throughput industrial environment, developing discipline, reliability, and cross-team communication under real operational constraints.</li>
@@ -166,10 +192,10 @@
     <section>
         <h2>Projects</h2>
         
-        <div class="project">
-            <div class="job-header">
-                <span><a href="https://github.com/addo1/FearOfKaunas" target="_blank" style="color: #0366d6; text-decoration: none;">Fear of Kaunas</a></span>
-                <span>Team Project (10/10 Grade)</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title"><a href="https://github.com/addo1/FearOfKaunas" target="_blank" style="color: #0366d6; text-decoration: none;">Fear of Kaunas</a></span>
+                <span class="item-location">Team Project (Top Grade: 10/10)</span>
             </div>
             <ul>
                 <li>Co-developed and presented a playable 3D horror game built with Godot and custom Blender assets as part of a 4-person team.</li>
@@ -178,10 +204,10 @@
             </ul>
         </div>
 
-        <div class="project">
-            <div class="job-header">
-                <span><a href="https://addo1.pythonanywhere.com/" target="_blank" style="color: #0366d6; text-decoration: none;">Lunch Booking Web App (DEPLOYED)</a></span>
-                <span>Full-Stack App</span>
+        <div class="item">
+            <div class="item-row">
+                <span class="item-title"><a href="https://addo1.pythonanywhere.com/" target="_blank" style="color: #0366d6; text-decoration: none;">Lunch Booking Web App (DEPLOYED)</a></span>
+                <span class="item-location">Full-Stack Application</span>
             </div>
             <ul>
                 <li>Designed, built, and deployed a full-stack Django web application for real-time lunch menu browsing and table booking.</li>
@@ -193,7 +219,7 @@
 
     <section>
         <h2>Language and Technologies</h2>
-        <ul>
+        <ul class="skills-list">
             <li><strong>Programming & Frameworks:</strong> Python, TypeScript, JavaScript, C++, React, Django, Node.js, NestJS, RESTful APIs, HTML5, CSS3</li>
             <li><strong>AI & Specialized Fields:</strong> Computer Vision, Multi-camera Systems, Real-time Data Processing, 3D Localization</li>
             <li><strong>Databases & Tools:</strong> PostgreSQL, SQLite, Git, GitHub, Trello, Figma</li>
